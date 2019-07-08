@@ -1,0 +1,46 @@
+.backbutton_parent {
+    display: block;
+    position: absolute;
+    top: 28px;
+    right: 8vw;
+    height: 24px;
+    width: 34px;
+    cursor: pointer;
+    pointer-events: all;
+    z-index: 800;
+
+}
+
+.backbutton_top,
+.backbutton_bottom {
+    display: block;
+    height: 4px;
+    width: 100%;
+    margin: 0px;
+    background-color: white;
+    border-radius: 0px;
+    opacity: 1;
+    transform-origin: center;
+    position: absolute;
+}
+
+.backbutton_top {
+    transform: rotate(0deg);
+    top: 0px;
+}
+
+.backbutton_bottom {
+    transform: rotate(0deg);
+    top: 20px;
+}
+
+
+/* Desktop Version ab 1366px Start */
+@media only screen and (min-width: 630px) {
+    
+    .backbutton_parent {
+    right: 6vw;
+}
+    
+    
+}

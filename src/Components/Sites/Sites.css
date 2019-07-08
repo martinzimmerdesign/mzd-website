@@ -1,0 +1,92 @@
+.site_container {
+    display: block;
+    position: absolute;
+    height: 100vh;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+	background-color: #292B34;
+    color: white;
+    overflow: auto;
+    overflow-x: hidden;
+}
+
+/* Entfernt Scrollbar an der Seite */
+.site_container::-webkit-scrollbar { 
+    display: none; 
+}
+
+.site_container_content {
+    display: block;
+    position: relative;
+    height: auto;
+    width: calc(100vw - 200px);
+    padding: 100px;
+    overflow-wrap: break-word;
+    overflow: inherit;
+    word-wrap: break-word;
+
+}
+
+.site_container h1 {
+    font-size: 3.5em;
+    margin: 0;
+    margin-bottom: 40px;
+    padding: 0;
+    font-weight: bold;
+}
+
+
+.site_container p {
+    display: block;
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+    font-size: 0.9em;
+    text-align: left;
+
+}
+
+.site_container li {
+    display: block;
+    padding: 0;
+    margin: 0;
+    line-height: 1.6;
+    font-size: 0.9em;
+    text-align: left;
+
+}
+
+.site_container a {
+    text-decoration: underline;
+    color: white;
+}
+
+.site_container h2,
+.site_container h3 {
+    margin: 10px 0;
+}
+
+
+/* ------------------------------ */
+/* ------------------------------ */
+/* ------------------------------ */
+
+
+/* Mobile Änderungen bis 800px Start */
+@media only screen and (max-width: 800px) {
+
+    .site_container_content {
+        padding: 20px;
+        width: auto;
+    }
+
+
+    .site_container h1 {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+
+    }
+
+}
+
+/* Mobile Änderungen bis 800px Ende */

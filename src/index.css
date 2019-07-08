@@ -1,0 +1,24 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+    
+    /* Manuell hinzugefügt ANFANG */
+          -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+      -webkit-transform: translate3d(0,0,0);
+    transform: translate3d(0,0,0);
+
+    /* Temporär nur zur Überprüfung */
+    background-color: white;
+    /* Manuell hinzugefügt ENDE */
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}

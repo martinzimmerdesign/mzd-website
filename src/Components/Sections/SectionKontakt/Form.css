@@ -1,0 +1,485 @@
+form {
+    display: block;
+    position: relative;
+    height: auto;
+    width: 85vw;
+    max-width: 500px;
+    background-color: rgba(0, 0, 0, 0.2);
+    margin: 0 auto;
+    margin-bottom: 5vh;
+    color: white;
+    border-radius: 5px;
+    padding: 10px;
+    overflow: hidden;
+}
+
+.line {
+    display: block;
+    position: relative;
+    height: 2px;
+    width: 70%;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.progress {
+    display: block;
+    position: relative;
+    height: auto;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.progress_item {
+    display: inline-block;
+    position: relative;
+    height: 4px;
+    width: 4px;
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 2px;
+    margin: 4px;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+    border-radius: 100%;
+}
+
+.done {
+    color: black;
+    background-color: white;
+    transition: all 0.5s;
+}
+
+.form_p1,
+.form_p2,
+.form_p3 {
+    position: relative;
+    display: block;
+}
+
+.hidden_part {
+    display: none;
+    left: 0vw;
+    opacity: 0.0;
+}
+
+.label_wrapper {
+    display: block;
+    position: relative;
+    margin: 10px 0px;
+}
+
+label {
+    display: block;
+    position: relative;
+    padding: 0;
+    padding-top: 4vw;
+    padding-left: 10px;
+    text-align: left;
+    font-weight: normal;
+}
+
+.notification {
+    display: block;
+    font-size: 0.7em;
+    font-weight: bold;
+    font-style: italic;
+    color: white;
+    margin-top: 10px;
+    padding: 0;
+    padding-left: 10px;
+    padding-bottom: 0vw;
+    opacity: 0.0;
+    position: relative;
+    right: 0;
+}
+
+
+input,
+textarea {
+    height: auto;
+    width: 70vw;
+    max-width: 400px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 10px;
+    margin-top: 4vw;
+    font-size: 1em;
+    font-weight: 500;
+    color: black;
+    border: 0px;
+    background-color: rgba(255, 255, 255, 1);
+    border: solid 3px;
+    border-color: white;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+input:focus {
+    background-color: white;
+    border-color: gray;
+    border-radius: 2px;
+
+    outline: none;
+}
+
+*:focus {
+    outline: none;
+}
+
+input:checked + label .outer_checkbox {
+    background-color: #27CF6D;
+}
+
+.outer_checkbox {
+    position: relative;
+    display: block;
+    height: 50px;
+    width: 50px;
+    padding: 14px;
+    border-radius: 5px;
+    background-color: white;
+    margin: 6px;
+}
+
+.outer_checkbox img {
+    display: block;
+    height: 35px;
+    width: auto;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0;
+}
+
+.check {
+    display: none;
+}
+
+.topic {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    width: auto;
+    height: auto;
+    text-align: center;
+}
+
+
+.hidden {
+    display: none;
+}
+
+.topic label {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 0.8em;
+    font-weight: normal;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+/* Form Titel "Kontaktformular" */
+form h2 {
+    padding-left: 10px;
+    margin: 15px 0px;
+}
+
+.topic p {
+    display: block;
+    font-size: 1em;
+    height: auto;
+    width: 100vw;
+    text-align: left;
+    padding-left: 10px;
+    padding-bottom: 0;
+    position: relative;
+    font-weight: normal;
+    line-height: 0.9em;
+}
+
+.topic p span {
+    display: block;
+    font-size: 0.7em;
+    font-weight: bold;
+    font-style: italic;
+    margin-top: 6px;
+}
+
+#old_checkbox {
+    display: none;
+}
+
+.label_agb_cb {
+    display: block;
+    position: relative;
+    margin-top: 6vw;
+    padding: 0px 11vw;
+    /*Um Text von Checkbox wegzubekommen */
+    font-size: 0.8em;
+    font-weight: normal;
+    color: white;
+}
+
+.label_agb_cb li {
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+}
+
+.label_agb_cb li a {
+    color: white;
+    text-decoration: underline;
+}
+
+.new_checkbox {
+    display: inline-block;
+    height: 15px;
+    width: 15px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border: 0.5px solid white;
+    position: absolute;
+    top: 50%;
+    left: 4vw;
+    transform: translateY(-50%);
+    border-radius: 4px;
+}
+
+input:checked + label .new_checkbox {
+    background-color: #27CF6D;
+}
+
+.send_notefield {
+    display: none;
+    height: auto;
+    width: 80vw;
+    position: relative;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.note_field_text {
+    display: block;
+    height: auto;
+    width: auto;
+    position: relative;
+    font-size: 0.9em;
+}
+
+.buttons {
+    display: block;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    height: auto;
+    width: auto;
+    text-align: center;
+}
+
+.send_button,
+.weiter,
+.back {
+    display: inline-block;
+    font-weight: bold;
+    font-size: 1em;
+    margin: 8vw 6px;
+    text-align: center;
+    padding: 12px 20px;
+    border: 1px solid;
+    border-color: rgba(0, 0, 0, 0);
+    border-radius: 5px;
+    background-color: #27CF6D;
+    color: white;
+    position: relative;
+}
+
+.weiter {
+    display: inline-block;
+    position: relative;
+    transition: all 0.5s;
+}
+
+.weiter:active {
+    background-color: #6BD999;
+    color: white;
+    transform: scale(1.05);
+    transition: all 0.2s;
+}
+
+.back {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.2);
+    color: white;
+    margin: 8vw 2px;
+    width: 95px;
+    text-align: center;
+    border-color: rgba(255, 255, 255, 1);
+}
+
+.back:active {
+    transform: scale(1.05);
+    transition: all 0.2s;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.send_button:active {
+    background-color: #6BD999;
+    color: white;
+    transform: scale(1.05);
+    transition: all 0.2s;
+}
+
+
+/* ------------------------------ */
+/* ------------------------------ */
+/* ------------------------------ */
+
+/* Desktop SMALL Änderungen Start */
+@media only screen and (min-width: 700px) {
+
+    .label_wrapper {
+        display: inline-block;
+        position: relative;
+        padding-left: 0px;
+        margin-right: 50px;
+    }
+
+
+    #kontakt_form {
+        max-width: 100vw;
+        width: auto;
+        margin: 0 6vw;
+        background-color: rgba(0, 0, 0, 0);
+        padding: 0px;
+
+    }
+
+    #kontakt_form h2 {
+        padding-left: 0px;
+        font-size: 1.8em;
+    }
+
+    .line {
+        margin: 30px 0px;
+    }
+
+    label,
+    .form_p2 p {
+        padding-left: 0px;
+        font-size: 1.2em;
+        padding: 0px 0px;
+        font-weight: normal;
+    }
+
+
+    .notification {
+        padding-left: 0px;
+        font-size: 0.9em;
+        margin: 0px 0px;
+        margin-top: 10px;
+        color: white;
+        font-weight: normal;
+        display: block;
+    }
+
+    input {
+        max-width: 300px;
+        margin-top: 10px;
+        font-size: 1.1em;
+    }
+
+    .buttons {
+        text-align: left;
+        padding-left: 0px;
+    }
+
+    .weiter,
+    .back,
+    .send_button {
+        margin: 40px 5px 20px 0px;
+        font-size: 1.1em;
+    }
+
+    .progress {
+        text-align: left;
+        margin-top: 30px;
+    }
+
+    .topic {
+        text-align: left;
+        justify-content: flex-start;
+    }
+
+    .outer_checkbox {
+        height: 80px;
+        width: 80px;
+    }
+
+    .outer_checkbox img {
+        height: 45px;
+    }
+
+    .topic label {
+        font-size: 1em;
+        margin: 0;
+        margin-right: 40px;
+        padding: 20px;
+        
+    }
+
+    textarea {
+        position: relative;
+        left: 0;
+        transform: translate(0);
+        margin: 0;
+        margin-top: 14px;
+    }
+
+    .label_agb_cb {
+        margin-top: 40px;
+        padding: 0px 40px;
+        font-size: 1em;
+        max-width: 500px;
+        /* Sieht deutlich schöner so aus, wenn es nicht so lang gezogen ist */
+    }
+
+    .new_checkbox {
+        height: 20px;
+        width: 20px;
+        left: 0;
+    }
+
+    .send_notefield {
+        margin: 0;
+    }
+
+    .note_field_text {
+        text-align: left;
+        font-size: 1em;
+    }
+
+}
+/* Desktop SMALL Änderungen Ende */
+
+
+/* Tablet Änderungen überschreiben die globalen Desktop Änderungen und stehen daher an letzter Stelle */
+
+
+/* Tablet SMALL Änderungen Start */
+@media only screen and (min-width: 700px) and (max-width: 1024px) { 
+    .topic label {
+        margin: 20px auto;
+    }
+}
+/* Tablet SMALL Änderungen Ende */

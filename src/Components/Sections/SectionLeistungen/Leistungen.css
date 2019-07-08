@@ -1,0 +1,378 @@
+/* Mobile First Basis-Version Start */
+
+/* ID für Section Parent + spezifische Farbe */
+#leistungen_parent {
+    background-image: linear-gradient(to right, #E3E2EC, #D7D5E1);
+    color: #333333;
+    /* Wird weiter vererbt */
+    overflow: hidden;
+}
+
+/* Haupt Container der Kategorien */
+.leistungen_item_container {
+    display: block;
+    position: relative;
+    height: auto;
+    width: 100vw;
+
+}
+
+/* Scroll Einheit der Kategorien */
+/* Ersetzt durch flickity */
+.carousel_leistungen {
+    margin-left: 6vw;
+}
+
+
+/* Kategorie Haupt Container */
+.leistung {
+    display: inline-block;
+    height: auto;
+    width: 85vw;
+    max-width: 1800px;
+    position: relative;
+    padding: 0px;
+    margin: 0vw 2vw;
+    margin-bottom: 6vw;
+    border-radius: 15px;
+    overflow: hidden;
+    transition: all 0.5s;
+    background-color: white;
+    float: left;
+}
+
+
+
+#drei_leistung {
+    margin-right: 6vw;
+}
+
+.leistungen_shadow {
+    box-shadow: 3px 3px 2px rgba(0, 0, 0, 0.1);
+}
+
+.leistung_icon_parent {
+    display: block;
+    height: auto;
+    width: 85vw;
+    position: relative;
+    margin: 0 auto;
+    padding: 70px 0;
+    background-color: #FAFAFA;
+    transition: all 0.5s;
+    overflow: hidden;
+
+}
+
+.leistung_icon {
+    display: block;
+    position: relative;
+    height: 50px;
+    width: 50px;
+    padding: 0px 0;
+    margin: 0 auto;
+    transition: all 0.5s;
+    opacity: 1;
+}
+
+
+.leistung_icon_animate {
+    height: 70px;
+    width: 70px;
+    padding: 30px;
+    filter: invert(100%);
+}
+
+.leistung_head_part {
+    display: block;
+    height: auto;
+    width: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.leistung_heading {
+    display: inline-block;
+    height: auto;
+    width: auto;
+    font-size: 1.2em;
+    color: #313131;
+    margin: 14px 0;
+    margin-bottom: 2px;
+    padding: 0;
+    padding-left: 20px;
+}
+
+.leistung_arrow {
+    display: inline-block;
+    height: auto;
+    width: 30px;
+    position: absolute;
+    right: 20px;
+    margin: 20px 0;
+    padding: 4px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transform: rotate(180deg);
+    transition: all 0.5s ease-in-out;
+
+}
+
+.leistung h5 {
+    display: block;
+    height: auto;
+    width: auto;
+    margin: 16px 0;
+    margin-top: 2px;
+    padding: 0;
+    padding-left: 20px;
+    font-size: 0.8em;
+    color: gray;
+    font-weight: normal;
+
+}
+
+.leistung_paragraph {
+    display: block;
+    height: auto;
+    width: auto;
+    position: relative;
+    font-size: 0.8em;
+    text-align: left;
+    font-weight: normal;
+    line-height: 1.6;
+    color: #282828;
+    margin: -5px 0px;
+    margin-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    overflow: hidden;
+    transition: all 0.5s;
+    opacity: 1;
+}
+
+.leistung_bsp_button {
+    display: block;
+    font-weight: normal;
+    font-size: 0.9em;
+    text-align: center;
+    padding: 12px 20px;
+    border: 1px solid;
+    border-color: #313131;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    color: #313131;
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    margin: 0;
+    transition: all 0.5s ease-in-out;
+    transition-delay: 0.2s;
+    opacity: 1;
+}
+
+.leistung_bsp_button:active {
+    background-color: #2BF296;
+    border-color: #2BF296;
+    color: #313131;
+    transition: all 0.2s ease-in-out;
+    transform: scale(1.05);
+}
+
+.leistungen_dots_container {
+    display: none;
+    position: relative;
+    height: auto;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.leistungen_dot {
+    display: inline-block;
+    position: relative;
+    height: 5px;
+    width: 5px;
+    background-color: rgba(0, 0, 0, 0.15);
+    padding: 2px;
+    margin: 5px;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+    border-radius: 100%;
+}
+
+.done {
+    color: black;
+    background-color: white;
+    transition: all 0.5s;
+}
+
+/* Mobile First Basis-Version Ende */
+
+
+/* JS CLASSES als Animationen nur für MOBILE */
+@media only screen and (max-width: 600px) {
+
+    .selected_i {
+        opacity: 0;
+        height: 0px;
+        width: 0px;
+    }
+
+    .selected_i_p {
+        padding: 5px 0;
+	background-image: linear-gradient(to right, #303AD0 , #2267D8);
+    }
+
+    .rotation_anim {
+        transform: rotate(0);
+        border-radius: 50px;
+    }
+
+    .p_anim {
+        height: 0;
+        margin: 0;
+        opacity: 0;
+        border: 0px solid black;
+    }
+
+    .b_anim {
+        opacity: 0;
+        bottom: -50px;
+        transition-delay: 0s;
+        transition-duration: 0.3s;
+    }
+
+    /* JS CLASSES als Animationen ENDE */
+}
+
+
+/* ------------------------------ */
+/* ------------------------------ */
+/* ------------------------------ */
+
+
+/* Desktop Änderungen ab 1366px Start */
+@media only screen and (min-width: 600px) {
+
+    /* Kategorie Haupt Container */
+    .leistung {
+        height: 460px;
+        max-width: 300px;
+        padding: 0px;
+        margin: 0;
+        margin-right: 50px;
+        margin-bottom: 6vw;
+        transition: all 0.4s ease-in-out;
+
+    }
+
+    .leistung:hover {
+        box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
+        transition: all 0.2s ease-in-out;
+    }
+
+    .leistung:hover > .leistung_bsp_button {
+        background-color: #2BF296;
+        border-color: #2BF296;
+        color: #313131;
+        transition: all 0.2s ease-in-out;
+    }
+
+    .leistung_icon_parent {
+        width: 100%;
+        padding: 40px 0px;
+    }
+
+    .leistung_arrow {
+        display: none;
+    }
+
+    .leistung_heading {
+        font-size: 1.1em;
+    }
+
+    .leistung h5 {
+        font-size: 0.9em;
+    }
+
+    .leistung_paragraph {
+        display: block;
+        font-size: 0.9em;
+        opacity: 1;
+    }
+
+    .leistung_bsp_button {
+        font-size: 0.9em;
+        transition: all 0.2s ease-in-out;
+
+    }
+
+    .leistung_bsp_button:hover {
+        transform: scale(1.10);
+        transition: all 0.2s ease-in-out;
+
+    }
+    
+    .leistung_bsp_button:active {
+        transform: scale(1);
+        transition: all 0.2s ease-in-out;
+        border-color: #313131;
+    }    
+}
+
+/* Desktop Änderungen ab 1366px Ende */
+
+
+/* ------------------------------ */
+/* ------------------------------ */
+/* ------------------------------ */
+
+
+/* Desktop Änderungen ab 1920px Start */
+@media only screen and (min-width: 1920px) {
+
+    /* Kategorie Haupt Container */
+    .leistung {
+        height: 540px;
+        max-width: 350px;
+        padding: 0px;
+        margin: 0;
+        margin-right: 60px;
+        margin-bottom: 6vw;
+    }
+
+    .leistung_icon_parent {
+        width: 100%;
+        padding: 50px 0px;
+    }
+
+    .leistung_arrow {
+        display: none;
+    }
+
+    .leistung_heading {
+        font-size: 1.4em;
+    }
+
+    .leistung h5 {
+        font-size: 1em;
+    }
+
+    .leistung_paragraph {
+        display: block;
+        font-size: 1em;
+        opacity: 1;
+    }
+
+    .leistung_bsp_button {
+        font-size: 1.1em;
+    }
+
+
+}
+
+/* Desktop Änderungen ab 1920px Ende */

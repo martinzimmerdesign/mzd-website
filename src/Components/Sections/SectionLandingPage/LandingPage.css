@@ -1,0 +1,174 @@
+/* Mobile Version START */	
+
+.landing_parent {
+	display: block;
+	position: relative;
+	height: calc( 100vh - 60px );
+	width: 100%;
+	background-image: linear-gradient(to right, #303AD0 , #2267D8);
+    overflow: hidden;
+	}
+	
+.landing_content {
+	display: block;
+	position: absolute;
+	height: auto;
+	width: auto;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	}
+	
+.main_title {
+	display: block;
+	font-weight: bold;
+	line-height: 1.4;
+	color: white;
+	text-align: left;
+	width: 100%;
+	margin: 2px;
+	padding: 0;
+/* Nachfolgende Elemente werden durch anime.js verändert animiert: */
+	font-size: 32px;
+	opacity: 0;
+	}
+	
+    .header_paragraph {
+        color: white;
+        font-size: 1.0em;
+        font-weight: normal;
+        padding: 10px 0px;
+        width: 100%;
+        margin: 2px 0;
+        line-height: 1.4;
+        opacity: 0;
+
+    }
+
+.mehr {
+	display: block;
+	font-weight: normal;
+	font-size: 1em;
+	margin: 8px 2px;
+	text-align: center;
+	padding: 12px 20px;
+	border: 1px solid;
+	border-color: rgba(0,0,0,0);
+	border-radius: 5px;
+	background-color: #2FD091; /* #6BD999 */
+	color: white;
+	position: relative;
+	box-shadow: 5px 5px 2px rgba(0,0,0,0.3);
+	transition: all 0.2s;
+	/* Nachfolgende Elemente werden durch anime.js verändert animiert: */
+	opacity: 0;
+	}
+	
+.mehr:hover {
+	background-color: #2DBF86;
+	color: white;
+	transition: all 0.1s;
+	}
+
+.mehr:active {
+	background-color: #5DD5A6;
+	color: white;
+	transition: all 0.1s;
+	}
+	
+.mehr_erfahren_arrow {
+	display: block;
+	height: auto;
+	width: 50px;
+  position: absolute;
+  left: 50%;
+  bottom: 60px; 
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 6px;
+  background-color: rgba(0,0,0,0.0);
+  border-radius: 100%;
+ /* Nachfolgende Elemente werden durch anime.js verändert animiert: */
+	opacity: 1;
+	}
+
+/* Mobile Version ENDE */	
+
+
+/* ------------------------------ */
+/* ------------------------------ */
+/* ------------------------------ */
+
+/* Desktop Version 1366px+ START */
+
+@media only screen and (min-width: 630px) {
+    
+    .landing_parent {
+        height: calc( 100vh - 80px );
+	}
+    
+    
+    .main_title {
+        font-size: 36px;
+    }
+    
+    .mehr {
+        font-size: 1.0em;
+        padding: 16px 24px;
+    }
+    
+    .header_paragraph {
+        color: white;
+        font-size: 1.1em;
+        font-weight: normal;
+        padding: 20px 0px;
+        width: 70%;
+        margin: 2px 0;
+        line-height: 1.4;
+        opacity: 0;
+
+    }
+    
+    .landing_content {
+        left: 6vw;
+        transform: translateY(-50%);
+    }
+}
+/* Desktop Version 1366px+ ENDE */
+
+/* Desktop Version 1920px+ START */
+
+@media only screen and (min-width: 1920px) {
+    
+    .landing_parent {
+        height: calc( 100vh - 80px );
+	}
+    
+    
+    .main_title {
+        font-size: 56px;
+    }
+    
+    .mehr {
+        font-size: 1.4em;
+        padding: 16px 24px;
+    }
+    
+    .header_paragraph {
+        color: white;
+        font-size: 1.4em;
+        font-weight: normal;
+        padding: 20px 0px;
+        width: 1200px;
+        margin: 5px 0;
+        line-height: 1.4;
+        opacity: 0;
+
+    }
+    
+    .landing_content {
+        left: 6vw;
+        transform: translateY(-50%);
+    }
+}
+/* Desktop Version 1920px+ ENDE */

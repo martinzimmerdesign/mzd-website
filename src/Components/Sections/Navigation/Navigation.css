@@ -1,0 +1,235 @@
+/* Mobile Version START */
+
+#nav_section {
+    display: block;
+    position: sticky;
+    top: 0;
+    left: 0;
+    height: auto;
+    max-height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    z-index: 400;
+    box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+}
+
+.outer {
+    display: block;
+    position: relative;
+    height: 60px;
+    width: 100vw;
+	background-image: linear-gradient(to right, #303AD0 , #2267D8);
+    margin: 0;
+    padding: 0;
+    transition: all 0.0s;
+    color: white;
+    z-index: 400;
+}
+
+.outer_change {
+    height: 18vh;
+    transition: all 0.0s;
+    background-image: linear-gradient(to right, #FFFFFF, #FFFFFF);
+    color: black;
+}
+
+.name {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 6vw;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    font-weight: normal;
+    /* Nachfolgende Elemente werden durch anime.js verändert animiert: */
+    opacity: 1;
+    /* SPÄTER ZU 0 */
+}
+
+.hamburger_icon {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 8vw;
+    transform: translateY(-50%);
+    height: 24px;
+    width: 34px;
+    cursor: pointer;
+    pointer-events: all;
+    z-index: 800;
+
+}
+
+.hamburger_icon_change div {
+    background-color: black;
+}
+
+.outer_extension {
+    display: block;
+    height: 82vh;
+    width: 100vw;
+    position: relative;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(to right, #FFFFFF, #D7D5E1);
+    z-index: 400;
+}
+
+.top,
+.middle,
+.bottom {
+    display: block;
+    height: 4px;
+    width: 100%;
+    margin: 0px;
+    background-color: white;
+    border-radius: 0px;
+    opacity: 1;
+    transform-origin: center;
+    position: absolute;
+}
+
+.top {
+    top: 0px;
+}
+
+.bottom {
+    top: 20px;
+}
+
+.middle {
+    top: 10px;
+
+}
+
+.middle_change {
+    opacity: 0;
+    transition-delay: 800ms;
+}
+
+
+
+.list {
+    display: block;
+    height: auto;
+    width: 92vw;
+    position: absolute;
+    top: 50%;
+    left: 4vw;
+    transform: translateY(-50%);
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 600;
+}
+
+.navigation_text {
+    display: block;
+    height: auto;
+    width: 84vw;
+    font-size: 1.2em;
+    text-align: left;
+    transition: all 0.4s;
+    text-transform: uppercase;
+    font-weight: bolder;
+    padding: 20px 4vw;
+    letter-spacing: 1px;
+}
+
+.secondary {
+    font-weight: normal;
+    font-size: 0.9em;
+    padding: 5px 4vw;
+    letter-spacing: normal;
+}
+
+.hoverable:hover {
+    transition: all 0.2s;
+    transition-timing-function: ease;
+    text-decoration: underline;
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.navigation_text a {
+    vertical-align: center;
+    text-decoration: none;
+    color: black;
+}
+
+.nav_line {
+    display: block;
+    position: relative;
+    height: 1px;
+    width: 84vw;
+    color: white;
+    margin: 20px 4vw;
+    background-color: black;
+}
+
+/* Mobile Version ENDE */
+
+
+/* ------------------------------ */
+/* ------------------------------ */
+/* ------------------------------ */
+
+/* Desktop Version ab 1366px Start */
+@media only screen and (min-width: 630px) {
+
+    #nav_section {
+        box-shadow: 0px 3px 2px rgba(0, 0, 0, 0.0);
+    }
+
+    .outer {
+        padding: 0px;
+        height: 80px;
+
+    }
+    
+    .outer_extension {
+    height: calc( 100vh - 80px );
+}
+
+    .hamburger_icon {
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 6vw;
+        transform: translateY(-50%);
+        height: 24px;
+        width: 34px;
+        cursor: pointer;
+        pointer-events: all;
+        z-index: 800;
+    }
+
+    .name {
+        font-size: 26px;
+    }
+
+.navigation_text {
+    font-size: 1.4em;
+}
+
+.secondary {
+    font-size: 1.1em;
+}    
+    
+
+}
+
+/* Desktop Version ab 1366px Ende */
+
+/* ------------------------------ */
+/* ------------------------------ */
+/* ------------------------------ */
+
+/* Desktop Version ab 1920px Start */
+@media only screen and (min-width: 1920px) {}
+
+/* Desktop Version ab 1920px Ende */

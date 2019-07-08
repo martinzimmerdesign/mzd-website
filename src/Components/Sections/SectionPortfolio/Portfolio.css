@@ -1,0 +1,141 @@
+/* ID für Section Parent + spezifische Farbe */
+#portfolio_parent {
+    background-image: linear-gradient(to right, #292B34, #282E48);
+    color: white;
+    /* Wird weiter vererbt */
+    overflow: hidden;
+}
+
+/* Haupt Container der Kategorien */
+.portfolio_item_container {
+    display: block;
+    position: relative;
+    height: auto;
+    width: 100vw;
+}
+
+/* Scroll Einheit der Kategorien */
+/* Ersetzt durch flickity */
+.carousel_portfolio {
+    margin-left: 6vw;
+    display: block;
+}
+
+.carousel_portfolio:after {
+    content: 'flickity';
+    display: none;
+    /* hide :after */
+}
+
+/* Kategorie Haupt Container */
+.portfolio_item {
+    display: inline-block;
+    height: 85vw;
+    width: 85vw;
+    max-height: 300px;
+    max-width: 300px;
+    position: relative;
+    padding: 0px;
+    margin: 0 2vw;
+    margin-bottom: 6vw;
+    border-radius: 0;
+    overflow: hidden;
+    transition: all 0.5s;
+    background-color: white;
+    float: left;
+}
+
+#last_portfolio {
+    margin-right: 6vw;
+}
+
+.portfolio_item_text_section {
+    display: block;
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    height: auto;
+    padding: 20px 0;
+    width: 100%;
+    z-index: 200;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.portfolio_item_title {
+    display: block;
+    width: auto;
+    color: white;
+    font-size: 1.1em;
+    font-weight: bolder;
+    margin: 5px 20px;
+    margin-top: 10px;
+}
+
+.portfolio_item_categorie {
+    display: none;
+    font-size: 0.8em;
+    font-weight: normal;
+    color: #313131;
+    padding: 4px 8px;
+    margin: 2px 20px;
+    border: 1px solid white;
+    border-radius: 5px;
+    background-color: white;
+    transition: all 0.2s ease-out;
+
+}
+
+.portfolio_item_thumbnail {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    margin: 0;
+    transition: all 0.4s ease-out;
+
+}
+
+.hidden_item {
+    display: none;
+}
+
+/* Mobile Version ENDE */
+
+
+/* ------------------------------ */
+/* ------------------------------ */
+/* ------------------------------ */
+
+
+/* Desktop Version ALLE START */
+
+@media only screen and (min-width: 600px) {
+
+
+    /* Kategorie Haupt Container */
+    .portfolio_item {
+        margin: 20px 20px;
+    }
+
+    .portfolio_item_title {
+        font-size: 1.1em;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        padding: 10px 0;
+    }
+
+    .portfolio_item_title:hover {
+        text-decoration: underline;
+        transition: all 0.3s;
+    }
+
+
+    .portfolio_item_thumbnail:hover {
+        transform: scale(1.2);
+        transition: all 0.2s ease-out;
+    }
+
+}
+
+/* Desktop Version ALLE ENDE */

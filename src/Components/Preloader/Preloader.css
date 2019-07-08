@@ -1,0 +1,30 @@
+#preloader {
+	display: block;
+	background-image: linear-gradient(to right, #357AD4 , #305CA2);
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	z-index: 800;
+	}
+	
+#preloader.hide {
+	display: none;
+	}
+	
+#preloader_circle_parent {
+	display: block;
+	position: sticky; 
+	top: 47vh;
+	width: 100vw;
+	margin: 0 auto;
+	}
+	
+#preloader_circle_parent h5 {
+	display: block;
+	color: white;
+	text-transform: uppercase;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	width: 100vw;
+	}

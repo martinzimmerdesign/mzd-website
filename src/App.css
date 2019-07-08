@@ -1,0 +1,110 @@
+/* Entfernt Scrollbar an der Seite */
+body::-webkit-scrollbar { 
+    display: none; 
+}
+
+/* Äußester Container jeder Section */
+.section_parent {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+    height: auto;
+    min-height: auto;
+	width: 100%;
+	margin: 0;
+    padding: 40px 0; /* Nur hier, da Content über 100vh geht */
+	}
+	
+.section_content_parent {
+	/* Flex Box mit top to buttom Richtung */
+	display: block;
+	position: relative;
+	height: auto;
+	width: 100%;
+    margin: 0 auto;
+	}
+	
+
+	
+/* Info Box mit Title + Paragraph jeder Section */
+.section_info_parent {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	height: auto;
+	width: 85vw;
+	padding: 0px;
+	margin: 6vw auto;
+	overflow: hidden;
+	}
+
+/* Font für alle Headings/Listen */
+h1,
+h2,
+h3,
+h4,
+h5,
+li {
+	font-family: 'Open Sans', sans-serif;
+	}
+
+/* Font für alle Paragraphen */
+p {
+	font-family: 'Raleway', sans-serif;
+	}
+	
+/* Section Titel */
+.section_title {
+	font-size: 1.6em;
+	font-weight: bold;
+	margin: 5px 0;
+	}
+
+/* Section Beschreibung */
+.section_paragraph {
+	margin: 5px 0;
+	font-size: 0.9em;
+	line-height: 1.4;
+	}
+
+/* ------------------------------ */
+/* ------------------------------ */
+/* ------------------------------ */
+
+/* Desktop Version 1366px+ START */
+
+@media only screen and (min-width: 1366px) {
+    
+/* Info Box mit Title + Paragraph jeder Section */
+.section_info_parent {
+	margin: 40px 0;
+    margin-left: 6vw;
+	}
+    
+/* Section Titel */
+.section_title {
+	font-size: 1.4em;
+	}
+
+/* Section Beschreibung */
+.section_paragraph {
+	font-size: 1.0em;
+	} 
+    
+}
+/* Desktop Version 1366px+ Ende */
+
+/* ------------------------------ */
+/* ------------------------------ */
+/* ------------------------------ */
+
+/* Desktop Version 1920px+ Start */
+@media only screen and (min-width: 1920px) {
+  
+/* Section Titel */
+.section_title {
+	font-size: 1.8em;
+	}
+
+}
+/* Desktop Version 1920px+ Ende */
