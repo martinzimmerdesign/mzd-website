@@ -2,137 +2,95 @@
 	display: block;
 	position: relative;
 	height: auto;
-	width: 100%;
-	background-color: #292B34;
+	width: calc(100% - 6vw);
+	background-color: #1E1D1D;
+
 	color: white;
-	padding: 20px 0;
+	padding: 10px 0;
+	padding-top: 40px;
 	margin: 0;
-	}
-	
-.footer_line {
-	display: block;
-	position: relative;
-	height: 1px;
-	width: 85vw;
-    max-width: 500px;
-	color: white;
-	margin: 0 auto;
-	background-color: white;
-	}
-	
-.footer_button_parent {
-	display: block;
-	position: relative;
-	height: auto;
-	width: 85vw;
-	margin: 0 auto;
-	}
-	
-.footer_button_parent p {
-	display: inline-block;
-	position: relative;
-	padding: 5px 0px;
-	}
-	
-.to_top_button {
-	display: inline-block;
-	position: relative;
-	height: 30px;
-	width: 30px;
-	float: right;
-	margin: 10px 0;
-	transform: rotate(180deg);
-	padding: 5px;
-	border-radius: 5px;
-	background-color: rgba(0,0,0,0.2);
-	transition: all 0.2s;
+	padding-left: 6vw;
+
 	}
 
-.to_top_button:hover, .to_top_button:active {
-	background-color: rgba(0, 0, 0, 0.3);
-	transition: all 0.2s;
-	height: 34px;
-	width: 34px;
-	padding: 3px;
-	}
-	
-.footer_header_content {
-	display: block;
-	position: relative;
-	height: auto;
-	width: 85vw;
-	margin: 0 auto;
-	margin-top: 20px;
-	}
-	
-.footer_heading {
-	font-size: 1.1em;
-	padding: 0;
-	margin: 4px 0;
-	}
-	
-.footer_slogan {
-	font-size: 1em;
-	padding: 0;
-	margin: 4px 0;
-	}
-
-.footer_social {
-	display: block;
-	position: relative;
-	height: auto;
-	width: auto;
-	margin: 20px auto;
-	}
-	
-.footer_social img {
-	display: inline-block;
-	position: relative;
-	height: 20px;
-	width: 20px;
-	margin: 0;
-	margin-right: 15px;
-	padding: 10px;
-	border-radius: 5px;
-	background-color: rgba(0,0,0,0.2);
-	transition: all 0.2s;
-	}
-	
-.footer_social img:hover, .footer_social img:active {
-	background-color: rgba(0, 0, 0, 0.3);
-	transition: all 0.2s;
-	height: 24px;
-	width: 24px;
-	padding: 8px;
-	}
-	
-.footer_info {
-	display: block;
-	position: relative;
-	height: auto;
-	width: 85vw;
-    max-width: 1200px;
-	margin: 0 auto;
-	margin-top: 20px;
-	font-size: 0.9em;
-	}
-	
-.footer_info li {
+.footer_parent li {
 	text-decoration: underline;
 	list-style: none;
-	padding: 0;
-	margin: 4px 0;
-	transition: all 0.2s;
+	line-height: 1.8em;
+	font-size: 1em;
 	}
 
-.footer_info li a {
+.footer_parent li a {
     color: white;
 }
-	
-.footer_info p {
+
+.footer_parent h1 {
+	margin: 0px 0px;
+	font-size: 3em;
+}
+
+.footer_paragraph {
 	padding: 0;
-	margin: 4px 0;
+	margin: 5px 0px;
+	margin-bottom: 40px;
+	font-size: 1.3em;
+	line-height: 1.3em;
+	font-weight: normal;
 	}
+
+.email {
+	font-size: 1em;
+	line-height: 1em;
+	font-weight: normal;
+	margin-top: 40px;
+}
+
+.email a {
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+	.copyright {
+		font-size: 1em;
+		line-height: 1.2em;
+		opacity: 0.5;
+		margin-top: 40px;
+	}
+
+	.links {
+		margin-top: 20px;
+	}
+
+	.kontakt_button {
+		display: block;
+		font-weight: bold;
+		font-size: 1em;
+		margin: 8px 2px;
+		text-align: center;
+		padding: 18px 20px;
+		border: 1px solid;
+		border-color: rgba(0,0,0,0);
+		border-radius: 5px;
+		background-color: #2FD091; /* #6BD999 */
+		color: white;
+		position: relative;
+		box-shadow: 5px 5px 2px rgba(0,0,0,0.0);
+		transition: all 0.2s;
+		/* Nachfolgende Elemente werden durch anime.js ver�ndert animiert: */
+		opacity: 1;
+		}
+
+	.kontakt_button:hover {
+		background-color: #2DBF86;
+		color: white;
+		transition: all 0.1s;
+		}
+
+	.kontakt_button:active {
+		background-color: #5DD5A6;
+		color: white;
+		transition: all 0.1s;
+		}
 
 
 /* ------------------------------ */
@@ -142,29 +100,7 @@
 
 /* Desktop SMALL Änderungen START */
 @media only screen and (min-width: 800px) {
-      
-.footer_line {
-    display: none;    
-    }    
-    
-.footer_button_parent, .footer_header_content, .footer_info {
-    display: inline-block;
-    width: 27%;
-    padding: 0px 3%;
-    
-    }    
-    
-.footer_info {
-    float: left;
-    }    
 
-.footer_button_parent {
-    float: right;
-    width: auto;
-    }
 
-.footer_button_parent img {
-    margin-left: 20px;
-    }  
-    
+
 }

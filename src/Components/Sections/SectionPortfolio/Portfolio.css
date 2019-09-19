@@ -1,9 +1,9 @@
-/* ID für Section Parent + spezifische Farbe */
+/* ID fï¿½r Section Parent + spezifische Farbe */
 #portfolio_parent {
-    background-image: linear-gradient(to right, #292B34, #282E48);
-    color: white;
+  background-color: white;
+  color: #333333;
     /* Wird weiter vererbt */
-    overflow: hidden;
+  overflow: hidden;
 }
 
 /* Haupt Container der Kategorien */
@@ -11,7 +11,7 @@
     display: block;
     position: relative;
     height: auto;
-    width: 100vw;
+    width: 100%;
 }
 
 /* Scroll Einheit der Kategorien */
@@ -19,30 +19,35 @@
 .carousel_portfolio {
     margin-left: 6vw;
     display: block;
+    margin-bottom: 6vw;
 }
 
+/* enable Flickity by default */
 .carousel_portfolio:after {
-    content: 'flickity';
-    display: none;
-    /* hide :after */
+  content: 'flickity';
+  display: none; /* hide :after */
 }
 
 /* Kategorie Haupt Container */
 .portfolio_item {
     display: inline-block;
+    position: relative;
     height: 85vw;
     width: 85vw;
-    max-height: 300px;
-    max-width: 300px;
-    position: relative;
+    max-height: 420px;
+    max-width: 360px;
     padding: 0px;
-    margin: 0 2vw;
+    margin-top: 40px 0px;
+    margin-right: 40px;
     margin-bottom: 6vw;
-    border-radius: 0;
-    overflow: hidden;
     transition: all 0.5s;
-    background-color: white;
-    float: left;
+    box-shadow: 0px 0px 15px rgba(175, 188, 212, 0.4);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.portfolio_item:hover {
+box-shadow: 0px 0px 20px rgba(175, 188, 212, 0.8);
 }
 
 #last_portfolio {
@@ -51,43 +56,26 @@
 
 .portfolio_item_text_section {
     display: block;
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
+    position: relative;
     height: auto;
     padding: 20px 0;
-    width: 100%;
+    background-color: white;
     z-index: 200;
-    background-color: rgba(0, 0, 0, 0.4);
+
 }
 
 .portfolio_item_title {
     display: block;
-    width: auto;
-    color: white;
-    font-size: 1.1em;
-    font-weight: bolder;
-    margin: 5px 20px;
-    margin-top: 10px;
-}
-
-.portfolio_item_categorie {
-    display: none;
-    font-size: 0.8em;
+    color: #333333;
+    font-size: 1.0em;
     font-weight: normal;
-    color: #313131;
-    padding: 4px 8px;
-    margin: 2px 20px;
-    border: 1px solid white;
-    border-radius: 5px;
-    background-color: white;
-    transition: all 0.2s ease-out;
-
+    text-align: center;
+    margin: 0;
 }
 
 .portfolio_item_thumbnail {
     display: block;
-    height: 100%;
+    height: auto%;
     width: 100%;
     position: relative;
     margin: 0;
@@ -95,8 +83,10 @@
 
 }
 
-.hidden_item {
-    display: none;
+.portfolio_item:hover .portfolio_item_thumbnail {
+    transform: scale(1.2);
+    transition: all 0.4s ease-out;
+
 }
 
 /* Mobile Version ENDE */
@@ -111,30 +101,38 @@
 
 @media only screen and (min-width: 600px) {
 
+  /* Kategorie Haupt Container */
+  .portfolio_item {
+      max-height: 380px;
+      max-width: 320px;
+      margin: 30px;
+  }
 
-    /* Kategorie Haupt Container */
-    .portfolio_item {
-        margin: 20px 20px;
-    }
+  /* Scroll Einheit der Kategorien */
+  /* Ersetzt durch flickity */
+  .carousel_portfolio {
+      margin-left: 0vw;
+  }
 
     .portfolio_item_title {
-        font-size: 1.1em;
-        width: 100%;
-        text-align: center;
-        margin: 0;
-        padding: 10px 0;
+        font-size: 1.2em;
     }
 
-    .portfolio_item_title:hover {
-        text-decoration: underline;
-        transition: all 0.3s;
+    /* disable Flickity for large devices */
+    .carousel_portfolio:after {
+      content: '';
     }
 
+}
 
-    .portfolio_item_thumbnail:hover {
-        transform: scale(1.2);
-        transition: all 0.2s ease-out;
-    }
+@media only screen and (min-width: 1920px) {
+
+  /* Kategorie Haupt Container */
+  .portfolio_item {
+      max-height: 420px;
+      max-width: 360px;
+      margin: 40px;
+  }
 
 }
 

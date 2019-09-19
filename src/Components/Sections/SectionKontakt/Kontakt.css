@@ -1,7 +1,7 @@
 /* ID für Section Parent + spezifische Farbe */
 #kontakt_parent {
-	background-image: linear-gradient(to right, #303AD0 , #2267D8);
-    color: white;
+		background-color: white;
+    color: #333333;
     /* Wird weiter vererbt */
 }
 

@@ -11,7 +11,7 @@ class SectionsContainer extends Component {
   render() {
     return (
 <div>
-        
+
         <Navigation />
         <Landing />
         <Leistungen />
@@ -25,4 +25,3 @@ class SectionsContainer extends Component {
 
 
 export default SectionsContainer;
-

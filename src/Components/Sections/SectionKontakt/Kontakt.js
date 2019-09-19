@@ -10,14 +10,13 @@ import "./FormularAbschnitte/FormHandler.js";
 
 
 export default class Kontakt extends React.Component {
-		
+
 		render() {
 			return(
-			
-			  <div id="kontakt_parent" class="section_parent">
 
+			  <div id="kontakt_parent" class="section_parent">
     <div class="section_info_parent">
-        
+
       <h2 class="section_title">Kontakt</h2>
       <p class="section_paragraph">Für <b>Fragen, Vorschläge oder Anregungen</b> bin ich immer offen, also schreiben Sie mir gerne unverbindlich eine Nachricht.
         <section class="social_media">
@@ -32,7 +31,7 @@ export default class Kontakt extends React.Component {
 <FormWrapper />
 
 </div>
-			
+
 			);
 			}
 	}

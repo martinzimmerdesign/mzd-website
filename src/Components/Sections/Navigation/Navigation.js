@@ -27,38 +27,38 @@ class NavLinks extends React.Component {
     </ul>
   );
   }
-    
+
 	}
 
 
 export default class Navigation extends React.Component {
 	constructor (props){
     super(props);
-    
+
     this.handleClick = this.handleClick.bind(this);
     this.state = {
       isMenuClicked: false
     };
-    
+
   }
 
 componentDidMount() {
     window.onscroll = function() {
       if(window.pageYOffset === 0) {
-    
+
       } else {
-    
+
       }
     };
   }
-  
+
   componentWillUnmount() {
     window.onscroll = null;
   }
 
 
 handleClick() {
-    
+
       if (this.state.isMenuClicked === false) {
     anime({
         targets: '.outer_extension',
@@ -163,7 +163,7 @@ handleClick() {
         })
 
     }
-    
+
 this.setState(this.toggleClickState);
   }
 
@@ -186,9 +186,9 @@ this.setState(this.toggleClickState);
     </div>
     <div class="outer_extension" style={{ display: this.state.isMenuClicked ? "block" : "none" }}>
       <NavLinks />
-      
+
     </div>
-    
+
     </div>
 		)
 		}
