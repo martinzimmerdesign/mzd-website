@@ -6,6 +6,7 @@
   color: #333333;
     /* Wird weiter vererbt */
   overflow: hidden;
+  margin-top: 80px;
 }
 
 /* Haupt Container der Kategorien */

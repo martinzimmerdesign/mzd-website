@@ -13,6 +13,7 @@ body::-webkit-scrollbar {
 	width: 100%;
 	margin: 0;
     padding: 0px 0; /* Nur hier, da Content �ber 100vh geht */
+    margin-bottom: 80px;
 	}
 
 .section_content_parent {

@@ -12,12 +12,12 @@ export default class FormAbschnittDrei extends React.Component {
 					<div class="label_wrapper">
         <label>Ihre Nachricht:</label>
         <textarea type="nachricht"
-                  rows="5"
+                  rows="6"
                   id="nachricht"
                   name="nachricht"
 ></textarea>
 </div>
-
+<div class="label_wrapper block">
             <div class="datenschutz_checkbox_wrapper">
         <input type="checkbox"
                id="old_checkbox"
@@ -28,7 +28,7 @@ export default class FormAbschnittDrei extends React.Component {
 <span class="new_checkbox"></span>Hiermit bestätige ich die <li><Link to="/datenschutzerklärung">Datenschutzerklärung</Link></li>&nbsp;gelesen zu haben und akzeptiere diese im vollen Unfang!
 </label>
             </div>
-
+</div>
         <section className="buttons">
           <button onClick={getBack2} name="data" type="button" class="back">Zurück</button>
           <button onClick={valPart3} type="button" class="send_button" name="data" value="Abschicken" id="submit_button">Senden</button>

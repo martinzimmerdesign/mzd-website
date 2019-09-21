@@ -57,17 +57,17 @@ function shownote() {
 // Ueberprueft durch den Weiter-Button getriggert, ob einem des ersten Teiles valide sind //
 export function valPart2() {
 
-    $(".notification").remove();
+  $(".notification").remove();
 
-    var checkboxes = $(".check");
+  var topic = $("#topic").val();
 
-    if (checkboxes.is(':checked')) {
-        getNext2();
-    } else {
-        $('.topic > p > span').css("display", "none");
-        $('.topic > p > span').after('<span class="notification" style="padding-left: 0vw;">Bitte wählen Sie eine oder mehrere Kategorien aus.</span>');
-        shownote(); getNext2();
-    }
+  if (topic.length < 1) {
+      $('#topic').after('<span class="notification">Bitte tragen Sie ein Thema ein.</span>');
+      shownote();
+  } else {
+      getNext2();
+  }
+
 };
 
 export function valPart3() {

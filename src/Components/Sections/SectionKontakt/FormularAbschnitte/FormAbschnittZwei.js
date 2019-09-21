@@ -14,9 +14,9 @@ export default class FormAbschnittZwei extends React.Component {
 
 			<div class="label_wrapper">
 	<label>An welcher Dienstleistung sind Sie interessiert?</label>
-	<input type="name"
-				 id="name"
-				 name="name"
+	<input type="topic"
+				 id="topic"
+				 name="topic"
 				 placeholder="z.B. Webdesign"
 					>
 	</input>
