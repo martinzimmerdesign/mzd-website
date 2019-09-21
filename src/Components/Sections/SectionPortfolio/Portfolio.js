@@ -90,7 +90,7 @@ export default class Portfolio extends React.Component {
       elementType={'div'} // default 'div'
       options={{
               contain: true,
-              freeScroll: false,
+              freeScroll: true,
               cellAlign: "center",
               freeScrollFriction: 0.03,
               prevNextButtons: false,
