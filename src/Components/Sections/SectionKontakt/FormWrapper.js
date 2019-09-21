@@ -8,19 +8,16 @@ import "./FormularAbschnitte/FormHandler.js";
 
 
 export default class FormWrapper extends React.Component {
-		
+
 		render() {
 			return(
 			<div>
 <form id="kontakt_form" action="#" method="POST">
-      <h2>Kontaktformular</h2>
 
-      <div class="line"></div>
-      
-      <div>
+			<div>
       <FormAbschnittEins />
       </div>
-      
+
       <div>
       <FormAbschnittZwei />
       </div>

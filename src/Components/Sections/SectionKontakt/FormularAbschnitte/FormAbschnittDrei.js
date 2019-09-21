@@ -4,22 +4,24 @@ import { Link } from "react-router-dom";
 
 export default class FormAbschnittDrei extends React.Component {
 
-		
+
 	render() {
 		return(
 		<div class="form_p3 hidden_part">
-		
+
+					<div class="label_wrapper">
         <label>Ihre Nachricht:</label>
         <textarea type="nachricht"
                   rows="5"
                   id="nachricht"
                   name="nachricht"
 ></textarea>
+</div>
 
             <div class="datenschutz_checkbox_wrapper">
         <input type="checkbox"
                id="old_checkbox"
-               
+
                name="datenschutz">
         </input>
         <label for="old_checkbox" class="label_agb_cb">
@@ -33,7 +35,7 @@ export default class FormAbschnittDrei extends React.Component {
         </section>
 
       </div>
-		
+
 		);
 		}
 	}

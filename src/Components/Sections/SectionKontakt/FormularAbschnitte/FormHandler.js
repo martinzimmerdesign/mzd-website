@@ -66,7 +66,7 @@ export function valPart2() {
     } else {
         $('.topic > p > span').css("display", "none");
         $('.topic > p > span').after('<span class="notification" style="padding-left: 0vw;">Bitte wählen Sie eine oder mehrere Kategorien aus.</span>');
-        shownote();
+        shownote(); getNext2();
     }
 };
 
@@ -121,7 +121,7 @@ export function getNext1() {
 
     $(".form_p2").delay("0").show("0");
 
-    
+
     anime({
         targets: '.form_p2',
         opacity: [0, 1],
@@ -132,7 +132,7 @@ export function getNext1() {
         easing: "easeInOutQuad",
     })
 
-    $("#pi2").addClass("done"); // Zeigt Position im Form // 
+    $("#pi2").addClass("done"); // Zeigt Position im Form //
 };
 
 
@@ -153,7 +153,7 @@ export function getNext2() {
 
     $(".form_p3").delay("0").show("0");
 
-    
+
     anime({
         targets: '.form_p3',
         opacity: [0, 1],
@@ -165,7 +165,7 @@ export function getNext2() {
     })
 
 
-    $("#pi3").addClass("done"); // Zeigt Position im Form // 
+    $("#pi3").addClass("done"); // Zeigt Position im Form //
 
 };
 
@@ -184,7 +184,7 @@ export function getBack1() {
 
     $(".form_p1").delay("0").show("0");
 
-    
+
     anime({
         targets: '.form_p1',
         opacity: [0, 1],
@@ -195,7 +195,7 @@ export function getBack1() {
         easing: "easeInOutQuad",
     })
 
-    $("#pi2").removeClass("done"); // Zeigt Position im Form // 
+    $("#pi2").removeClass("done"); // Zeigt Position im Form //
 
 };
 
@@ -215,7 +215,7 @@ export function getBack2() {
 
     $(".form_p2").delay("0").show("0");
 
-    
+
     anime({
         targets: '.form_p2',
         opacity: [0, 1],
@@ -226,7 +226,7 @@ export function getBack2() {
         easing: "easeInOutQuad",
     })
 
-    $("#pi3").removeClass("done"); // Zeigt Position im Form // 
+    $("#pi3").removeClass("done"); // Zeigt Position im Form //
 };
 
 // Schliesst das Form und schreibt Erfolg / Fehlermeldung //
@@ -246,7 +246,7 @@ export function send_notification() {
     $(".form_p3").delay("800").hide("0");
 
     $(".progress").delay("800").hide("0");
-    
+
     $(".send_notefield").delay("800").show("0");
 
         anime({
@@ -312,7 +312,7 @@ export function senden() {
     var v_datenschutz = $('#old_checkbox').val();
 
     $.ajax({
-        type: "POST", // Method type GET/POST           
+        type: "POST", // Method type GET/POST
         url: "form.php", //Ajax Action url
         data: {
             name: v_name,

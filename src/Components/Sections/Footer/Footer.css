@@ -3,9 +3,9 @@
 	position: relative;
 	height: auto;
 	width: calc(100% - 6vw);
-	background-color: #1E1D1D;
+	background-color: #fbfbfd;
 
-	color: white;
+	color: #333333;
 	padding: 10px 0;
 	padding-top: 40px;
 	margin: 0;
@@ -21,7 +21,7 @@
 	}
 
 .footer_parent li a {
-    color: white;
+    color: #333333;
 }
 
 .footer_parent h1 {

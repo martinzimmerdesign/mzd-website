@@ -13,15 +13,6 @@ form {
     overflow: hidden;
 }
 
-.line {
-    display: block;
-    position: relative;
-    height: 2px;
-    width: 70%;
-    margin: 0 auto;
-    background-color: rgba(0, 0, 0, 0.3);
-}
-
 .progress {
     display: block;
     position: relative;
@@ -38,7 +29,7 @@ form {
     position: relative;
     height: 4px;
     width: 4px;
-    background-color: rgba(0, 0, 0, 0.15);
+    background-color: rgba(0, 0, 0, 0.3);
     padding: 2px;
     margin: 4px;
     text-align: center;
@@ -49,7 +40,7 @@ form {
 
 .done {
     color: black;
-    background-color: white;
+    background-color: #27CF6D;
     transition: all 0.5s;
 }
 
@@ -58,6 +49,7 @@ form {
 .form_p3 {
     position: relative;
     display: block;
+    text-align: center;
 }
 
 .hidden_part {
@@ -80,6 +72,7 @@ label {
     padding-left: 10px;
     text-align: left;
     font-weight: normal;
+    color: #333333;
 }
 
 .notification {
@@ -87,7 +80,7 @@ label {
     font-size: 0.7em;
     font-weight: bold;
     font-style: italic;
-    color: white;
+    color: #4c4f56;
     margin-top: 10px;
     padding: 0;
     padding-left: 10px;
@@ -110,21 +103,36 @@ textarea {
     margin-top: 4vw;
     font-size: 1em;
     font-weight: 500;
-    color: black;
+    color: #4c4f56;
     border: 0px;
     background-color: rgba(255, 255, 255, 1);
-    border: solid 3px;
+    box-shadow: 0px 0px 15px rgba(175, 188, 212, 0.4);
+    border: solid 2px;
     border-color: white;
     border-radius: 5px;
     transition: all 0.5s;
 }
 
 input:focus {
-    background-color: white;
-    border-color: gray;
-    border-radius: 2px;
+        box-shadow: 0px 0px 15px rgba(175, 188, 212, 0.8);
+        border: 2px solid rgba(175, 188, 212, 0.4);
+        outline: none;
+}
 
-    outline: none;
+/* Change Autocomplete styles in Chrome*/
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+textarea:-webkit-autofill,
+textarea:-webkit-autofill:hover,
+textarea:-webkit-autofill:focus,
+select:-webkit-autofill,
+select:-webkit-autofill:hover,
+select:-webkit-autofill:focus {
+  border: 2px solid white;
+  -webkit-text-fill-color: #4c4f56;
+  -webkit-box-shadow: 0px 0px 15px rgba(175, 188, 212, 0.4);
+  transition: background-color 5000s ease-in-out 0s;
 }
 
 *:focus {
@@ -133,6 +141,19 @@ input:focus {
 
 input:checked + label .outer_checkbox {
     background-color: #27CF6D;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #6b717d;
+  opacity: 1; /* Firefox */
+}
+
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #6b717d;
+}
+
+::-ms-input-placeholder { /* Microsoft Edge */
+  color: #6b717d;
 }
 
 .outer_checkbox {
@@ -229,7 +250,7 @@ form h2 {
     /*Um Text von Checkbox wegzubekommen */
     font-size: 0.8em;
     font-weight: normal;
-    color: white;
+    color: #333333;
 }
 
 .label_agb_cb li {
@@ -239,7 +260,7 @@ form h2 {
 }
 
 .label_agb_cb li a {
-    color: white;
+    color: #333333;
     text-decoration: underline;
 }
 
@@ -295,11 +316,12 @@ input:checked + label .new_checkbox {
     font-size: 1em;
     margin: 8vw 6px;
     text-align: center;
-    padding: 12px 20px;
+    padding: 20px 40px;
     border: 1px solid;
     border-color: rgba(0, 0, 0, 0);
-    border-radius: 5px;
-    background-color: #27CF6D;
+    border-radius: 10px;
+    background-color: #0033ff;
+    box-shadow: 0px 0px 15px rgba(175, 188, 212, 0.4);
     color: white;
     position: relative;
 }
@@ -352,7 +374,7 @@ input:checked + label .new_checkbox {
         display: inline-block;
         position: relative;
         padding-left: 0px;
-        margin-right: 50px;
+        margin: 30px;
     }
 
 
@@ -370,10 +392,6 @@ input:checked + label .new_checkbox {
         font-size: 1.8em;
     }
 
-    .line {
-        margin: 30px 0px;
-    }
-
     label,
     .form_p2 p {
         padding-left: 0px;
@@ -388,19 +406,22 @@ input:checked + label .new_checkbox {
         font-size: 0.9em;
         margin: 0px 0px;
         margin-top: 10px;
-        color: white;
+        color: #4c4f56;
         font-weight: normal;
         display: block;
+        text-align: left;
     }
 
     input {
         max-width: 300px;
         margin-top: 10px;
         font-size: 1.1em;
+        padding: 15px;
+        border-radius: 10px;
     }
 
     .buttons {
-        text-align: left;
+        text-align: center;
         padding-left: 0px;
     }
 
@@ -412,7 +433,7 @@ input:checked + label .new_checkbox {
     }
 
     .progress {
-        text-align: left;
+        text-align: center;
         margin-top: 30px;
     }
 
@@ -435,7 +456,7 @@ input:checked + label .new_checkbox {
         margin: 0;
         margin-right: 40px;
         padding: 20px;
-        
+
     }
 
     textarea {
@@ -477,7 +498,7 @@ input:checked + label .new_checkbox {
 
 
 /* Tablet SMALL Änderungen Start */
-@media only screen and (min-width: 700px) and (max-width: 1024px) { 
+@media only screen and (min-width: 700px) and (max-width: 1024px) {
     .topic label {
         margin: 20px auto;
     }
