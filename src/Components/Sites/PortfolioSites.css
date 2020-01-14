@@ -78,8 +78,9 @@
 .figure_subtitle {
   font-weight: lighter;
   color: #898989;
-  margin: 30px 0;
+  margin: 30px auto;
   text-align: center;
+  width: 90%;
 }
 
 .concept_wrapper {
