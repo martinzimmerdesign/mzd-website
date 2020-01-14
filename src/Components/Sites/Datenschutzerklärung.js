@@ -1,22 +1,20 @@
 import React from "react";
 import './Sites.css';
-import BackButton from "./BackButton.js";
 import { Link } from "react-router-dom";
 
 
 export default class Datenschutzerklärung extends React.Component {
 	componentDidMount() {}
-		
+
 	render() {
 		return(
 		<div className="site_container">
             <div className="site_container_content">
-                <Link to="/"><BackButton /></Link>
-            
+
             <h1>Datenschutzerklärung</h1>
 
-            
-    
+
+
             <p>Wir informieren Sie nachfolgend gem&auml;&szlig; den gesetzlichen Vorgaben des Datenschutzrechts (insb. gem&auml;&szlig; BDSG n.F. und der europ&auml;ischen Datenschutz-Grundverordnung &sbquo;DS-GVO&lsquo;) &uuml;ber die Art, den Umfang und Zweck der Verarbeitung personenbezogener Daten durch unser Unternehmen.&nbsp;Diese Datenschutzerkl&auml;rung gilt auch f&uuml;r unsere Websites und Sozial-Media-Profile. Bez&uuml;glich der Definition von Begriffen wie etwa &bdquo;personenbezogene Daten&ldquo; oder &bdquo;Verarbeitung&ldquo; verweisen wir auf Art. 4 DS-GVO.</p>
 <p><strong>Name und Kontaktdaten des / der Verantwortlichen</strong><br /> Unser/e Verantwortliche/r (nachfolgend &bdquo;Verantwortlicher&ldquo;) i.S.d. Art. 4 Zif. 7 DS-GVO ist:<br /> <br /> Martin Zimmer Design<br /> Knotterkamp 12<br /> 21335, L&uuml;neburg, Deutschland<br /> Gesch&auml;ftsf&uuml;hrer Martin Zimmer<br /> E-Mail-Adresse: m.zimmer.business@gmail.com<br /> <br /> <strong>Datenarten, Zwecke der Verarbeitung und Kategorien betroffener Personen</strong><br /> </p>
 <p>Nachfolgend informieren wir Sie &uuml;ber Art, Umfang und Zweck der Erhebung, Verarbeitung und Nutzung personenbezogener Daten.</p>
@@ -144,7 +142,7 @@ export default class Datenschutzerklärung extends React.Component {
 <p><br /> <br /> <strong>Stand: 23.05.2019</strong></p>
 <p>Quelle:&nbsp;<a href="https://www.juraforum.de/datenschutzerklaerung-muster/">Muster-Datenschutzerkl&auml;rung von JuraForum.de</a></p>
 <p>&nbsp;</p>
-            
+
         </div>
 		</div>
 		);

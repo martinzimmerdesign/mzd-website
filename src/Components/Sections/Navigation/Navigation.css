@@ -20,7 +20,7 @@
     position: relative;
     height: 60px;
     width: 100vw;
-	background-image: linear-gradient(to right, #303AD0 , #2267D8);
+	  background-image: linear-gradient(to right, #303AD0 , #2267D8);
     margin: 0;
     padding: 0;
     transition: all 0.0s;
@@ -45,9 +45,9 @@
     padding: 0;
     font-size: 22px;
     font-weight: normal;
-    /* Nachfolgende Elemente werden durch anime.js verändert animiert: */
+    /* Nachfolgende Elemente werden durch anime.js verï¿½ndert animiert: */
     opacity: 1;
-    /* SPÄTER ZU 0 */
+    /* SPï¿½TER ZU 0 */
 }
 
 .hamburger_icon {
@@ -190,7 +190,7 @@
         height: 80px;
 
     }
-    
+
     .outer_extension {
     height: calc( 100vh - 80px );
 }
@@ -218,8 +218,8 @@
 
 .secondary {
     font-size: 1.1em;
-}    
-    
+}
+
 
 }
 

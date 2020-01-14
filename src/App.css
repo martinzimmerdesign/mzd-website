@@ -39,7 +39,8 @@ body::-webkit-scrollbar {
 	margin: 40px auto;
 	overflow: hidden;
 	}
-
+  
+@import url('https://fonts.googleapis.com/css?family=Noto+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans&display=swap');
 /* Font f�r alle Headings/Listen */
 h1,

@@ -1,0 +1,192 @@
+.bevensen_case_study {
+  background-color: white;
+}
+
+.site_start {
+  display: block;
+  position: relative;
+  height: 50%;
+  width: 100%;
+  background-image: url("./PortfolioImages/bevensen_case_study.png");
+  background-repeat:no-repeat;
+  background-attachment:fixed;
+  background-position:center;
+}
+
+.position_wrapper {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.site_start h1 {
+  color: #323232;
+  height: auto;
+  font-size: 5em;
+  background-color: rgba(255,255,255,0.4);
+  padding: 10px 20px;
+  letter-spacing: 0.1em;
+  margin: 5px;
+}
+
+.site_start h3 {
+  color: #323232;
+  font-size: 2em;
+  font-family: 'Noto Serif', serif;
+}
+
+.site_content_wrapper {
+  height: auto;
+  width: 85%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 50px 20px;
+  color: #323232;
+}
+
+.site_content_wrapper h3 {
+  font-size: 1.8em;
+}
+
+.site_content_wrapper p {
+  color: #424242;
+  font-size: 1.1em;
+  font-family: 'Noto Serif', serif;
+  text-align: justify;
+  line-height: 1.74;
+  margin: 0;
+  margin-top: 40px;
+}
+
+.site_image_wrapper {
+  display: block;
+  width: 100%;
+  color: #898989;
+  padding: 50px 0px;
+}
+
+.site_image {
+  display: block;
+  width: 90%;
+  height: auto;
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
+.figure_subtitle {
+  font-weight: lighter;
+  color: #898989;
+  margin: 30px 0;
+  text-align: center;
+}
+
+.concept_wrapper {
+  display: block;
+  text-align: center;
+}
+
+.concept_keywords h2 {
+  display: inline-block;
+  margin: 20px 40px;
+  color: #323232;
+  background-color: #64F4B1;
+  padding: 20px 120px;
+  text-align: center;
+  letter-spacing: 0.05em;
+}
+
+.concept_keywords h2:hover {
+
+}
+
+.circle_wrapper {
+  display: inline-block;
+  margin: 30px;
+}
+
+.circle_wrapper h2 {
+  color: #323232;
+  margin: 30px 0;
+}
+
+.circle {
+  display: inline-block;
+  height: 150px;
+  width: 150px;
+  border: 10px solid #64F4B1;
+  background-color: white;
+  border-radius: 100px;
+}
+
+.circle h2 {
+  display: block;
+  font-size: 3em;
+  vertical-align: middle;
+  line-height: 150px;
+  text-align: center;
+  color: #64F4B1;
+  margin: 0;
+}
+
+/* ------------------------------ */
+/* ------------------------------ */
+/* ------------------------------ */
+
+
+/* Desktop Änderungen bis 1440px Start */
+@media only screen and (max-width: 1440px) {
+
+.site_start h1 {
+  font-size: 3em;
+}
+
+.site_content_wrapper {
+  width: 85%;
+}
+
+.site_image {
+  width: 80%;
+}
+
+.concept_keywords h2 {
+  margin: 10px 20px;
+  padding: 20px 90px;
+}
+
+.circle {
+  height: 100px;
+  width: 100px;
+  border: 6px solid #64F4B1;
+}
+
+.circle h2 {
+  font-size: 2em;
+  line-height: 100px;
+}
+
+
+}
+
+/* Desktop Änderungen ab 1920px Ende */
+
+/* Desktop Änderungen bis 1440px Start */
+@media only screen and (max-width: 630px) {
+
+.circle_wrapper {
+  display: block;
+}
+
+.site_start h1 {
+  font-size: 2.5em;
+  background-color: rgba(255,255,255,0);
+}
+
+.site_start h3 {
+  font-size: 1.5em;
+}
+
+}
+
+/* Desktop Änderungen ab 1920px Ende */

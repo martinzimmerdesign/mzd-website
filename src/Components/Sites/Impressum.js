@@ -1,19 +1,17 @@
 import React from "react";
 import './Sites.css';
-import BackButton from "./BackButton.js";
 import { Link } from "react-router-dom";
 
 
 export default class Impressum extends React.Component {
 	componentDidMount() {}
-		
+
 	render() {
 		return(
 		<div className="site_container">
             <div className="site_container_content">
-                <Link to="/"><BackButton /></Link>
             
-            
+
 <h1>Impressum</h1>
 
 <h2>Angaben gem&auml;&szlig; &sect; 5 TMG</h2>
@@ -55,7 +53,7 @@ DE314581712</p>
 <p>Soweit die Inhalte auf dieser Seite nicht vom Betreiber erstellt wurden, werden die Urheberrechte Dritter beachtet. Insbesondere werden Inhalte Dritter als solche gekennzeichnet. Sollten Sie trotzdem auf eine Urheberrechtsverletzung aufmerksam werden, bitten wir um einen entsprechenden Hinweis. Bei Bekanntwerden von Rechtsverletzungen werden wir derartige Inhalte umgehend entfernen.</p>
 <br />
 <p>Quelle: <a href="https://www.e-recht24.de">eRecht24</a></p>
-    
+
             </div>
 		</div>
 		);

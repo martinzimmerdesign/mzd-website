@@ -76,6 +76,7 @@ export default class Portfolio extends React.Component {
 	render() {
 		return(
 
+
 		<div id="portfolio_parent" class="section_parent">
 		<div class="section_content_parent">
 
