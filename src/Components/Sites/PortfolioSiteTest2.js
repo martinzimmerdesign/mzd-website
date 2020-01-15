@@ -4,6 +4,7 @@ import './PortfolioSites.css';
 import bevensen_case_study_mockup from "./PortfolioImages/d.png";
 import anime from "animejs";
 import { Link } from "react-router-dom";
+import Fade from 'react-reveal/Fade';
 
 const data = {
 
@@ -19,23 +20,6 @@ image: bevensen_case_study_mockup,
 export default class PortfolioSiteTest2 extends React.Component {
 	componentDidMount() {
 
-		anime({
-      targets: ".elements-animate-in",
-      translateY: ["60px", "0px"],
-      opacity: [0, 1],
-      easing: "easeOutQuart",
-      delay: anime.stagger(500, { easing: "easeOutQuad", start: 500 })
-    });
-
-    anime({
-      targets: ".casestudy-animate-in_bottom",
-      translateX: ["60px", "0px"],
-      opacity: [0, 1],
-      easing: "easeOutQuart",
-      delay: anime.stagger(500, { easing: "easeOutQuad", start: 500 })
-    });
-
-
 
 	}
 
@@ -49,7 +33,8 @@ export default class PortfolioSiteTest2 extends React.Component {
 							<h3>{data.subtitle}</h3>
 						</div>
 					</div>
-					<div className="elements-animate-in site_content_wrapper">
+					<Fade bottom cascade>
+					<div className="site_content_wrapper">
 								<h3>Überblick:</h3>
 								<p>{data.overview}</p>
 				  </div>
@@ -57,6 +42,9 @@ export default class PortfolioSiteTest2 extends React.Component {
 								<img className="site_image" alt="bevensen_case_study_mockup" src={data.image}></img>
 								<h5 className="figure_subtitle">Startseite auf dem iPad Pro und dem iPhone X</h5>
 								</div>
+
+
+
 					<div className="site_content_wrapper">
 								<h3>Ziele und Herausforderungen:</h3>
 								<p>{data.challenges}</p>
@@ -68,6 +56,7 @@ export default class PortfolioSiteTest2 extends React.Component {
 						<h2>SCHLICHT</h2>
 						<h5 className="figure_subtitle">Die drei Aspekte beim erstellen der Webseite</h5>
 					</div>
+
 
 					<div className="site_content_wrapper">
 								<h3>Wie konnte das Ziel erreicht werden?</h3>
@@ -105,9 +94,9 @@ export default class PortfolioSiteTest2 extends React.Component {
 						</div>
 	<h5 className="figure_subtitle">Quelle: Google Lighthouse Score (Desktop) vom 10.12.2019</h5>
 					</div>
-
+</Fade>
 					<div className="site_content_wrapper">
-								<h3>Das Ergebnis:</h3>
+										<h3>Das Ergebnis:</h3>
 								<p>{data.result}</p>
 				  </div>
 
